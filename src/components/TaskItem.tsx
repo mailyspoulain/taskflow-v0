@@ -1,5 +1,4 @@
-import { STATUS_LABEL, type Task } from "../types";​
-
+   import { STATUS_LABEL, priorityBadge, type Task } from "../types";
 ​
 
 type Props = {​
@@ -51,6 +50,10 @@ export function TaskItem({ task, onCycle, onRemove }: Props) {​
         aria-label={`Supprimer « ${task.title} »`}​
 
       >​
+
+      <span className={`badge badge-p${task.priority}`}>
+        {priorityBadge(task.priority)}
+      </span>
 
         ✕​
 

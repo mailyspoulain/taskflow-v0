@@ -52,3 +52,14 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); ou
 .prio--3 { background: #f1f5f9; color: #475569; }
 .empty { color: var(--muted); text-align: center; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.badge { padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: 700; }
+.badge-p1 { background: #ffc9d6; color: #8a2b45; }
+.badge-p2 { background: #fff1bf; color: #7a5c00; }
+.badge-p3 { background: #c8f0dc; color: #2c6b4c; }
+.card { padding: 16px 20px; border-radius: 16px; border: 1px solid #e3d9d0; background: #fff; margin-bottom: 16px; }
+.card h2 { margin: 0 0 8px; font-size: 16px; }
+.timer { font-size: 44px; font-weight: 800; margin: 4px 0 12px; font-variant-numeric: tabular-nums; }
+.timer-actions { display: flex; gap: 8px; }
+.app-header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.theme-toggle { width: 40px; height: 40px; padding: 0; border-radius: 50%; font-size: 1.1rem; line-height: 1; }
+.task-form select { flex: 0 0 auto; min-width: 120px; }

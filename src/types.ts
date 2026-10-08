@@ -1,13 +1,21 @@
 export type Status = "todo" | "doing" | "done";
-export type Priority = 1 |2 |3;
-export type Task = {id: string; title: string; status: Status; priority: Priority};
+export type Priority = 1 | 2 | 3;
+export type Task = { id: string; title: string; status: Status; priority: Priority };
 export type Filter = "all" | Status;
 
-export const STATUS_LABEL: Record<Status, string>= {
+export const STATUS_LABEL: Record<Status, string> = {
     todo: "To Do",
     doing: "Doing",
-    done: "Done"
+    done: "Done",
 };
 
-export const nextStatus = (s:Status): Status =>
+export const nextStatus = (s: Status): Status =>
     s === "todo" ? "doing" : s === "doing" ? "done" : "todo";
+
+export const PRIORITIES: { value: Priority; label: string }[] = [
+    { value: 1, label: "Haute" },
+    { value: 2, label: "Moyenne" },
+    { value: 3, label: "Basse" },
+];
+
+export const priorityBadge = (p: Priority) => `P${p}`;
